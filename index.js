@@ -48,7 +48,11 @@ inquirer
 
 
 // TODO: Create a function to write README file
-function writeToFile(ReadMe, data) {}
+function writeToFile(ReadMe, data) {
+  fs.writeFile("readme.txt", process.argv[i], (err)=>
+    err ? console.error(err) : console.log("readme.txt created")
+  );
+}
 
 // TODO: Create a function to initialize app
 function init() {
