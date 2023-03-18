@@ -1,1 +1,4 @@
-{"description":"d","installInstr":"fghjn","useInstr":"tuik v","license":"retgy","contribute":"hgl","tests":"seryt","githubUserName":"vwet","email":"drty"}
+# ReadME-Generator
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
