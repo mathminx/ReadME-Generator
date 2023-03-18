@@ -1,62 +1,69 @@
-// TODO: Include packages needed for this application
-npm install
-
-// TODO: Create an array of questions for user input
+// Import packages needed for this application
+const fs = require("fs");
 const inquirer = require("inquirer");
-inquirer
-  .prompt([
+
+
+//const generateMarkdown = require ("./utils/generateMarkdown");
+
+// Array of questions for user input
+const questions = [
   {
     type: "input",
-    message: "Provide a short description of your application.",
-    name: 
+    message: "Input a short description of your application.",
+    name: "description",
   },
   {
-    "Provide  installation instructions."
+    type: "input",
+    message: "Provide any installation instructions.",
+    name: "installInstr",
   },
   {
-    "Provide instructions and examples for use."
+    type: "input",
+    message: "Provide instructions for use and examples.",
+    name: "useInstr"
   },
   {
-    "Choose a license."
+    type: "input",
+    message: "Choose a license.",
+    name: "license",
   },
   {
-    "Provide guidlines for other developers who wish to contribute to your application.",
+    type: "input",
+    message: "Provide guidelines for other developers who wish to contribute to your application.",
+    name: "contribute",
   }, 
   {
-    "Include any tests written for your application and how to run them.",
+    type: "input",
+    message: "Include any tests written for your application and how to run them.",
+    name: "tests",
   },
   { 
-  "Provide your github username for anyone with questions."
+    type: "input",
+    message: "Provide your github username for anyone with questions.",
+    name: "githubUserName",
   },
   {
-  "Provide an email address and instructions on how to reach you with additionasl questions."
-  },
-  {
-  "Include any tests written for your application and how to run them.",
+    type: "input",
+    message: "Provide an email address and instructions on how to reach you with additionasl questions.",
+    name: "email",
   }
-])
-.then((answers) => {
-  // Use user feedback for... whatever!!
-})
-.catch((error) => {
-  if (error.isTtyError) {
-    // Prompt couldn't be rendered in the current environment
-  } else {
-    // Something else went wrong
-  }
-});
+];
 
 
-// TODO: Create a function to write README file
-function writeToFile(ReadMe, data) {
-  fs.writeFile("readme.txt", process.argv[i], (err)=>
-    err ? console.error(err) : console.log("readme.txt created")
+// Function to write README file
+function writeToFile(ReadMe, userResponses) {
+  fs.writeFile("readMe.md", JSON.stringify(userResponses), (err)=>
+    err ? console.error(err) : console.log(userResponses)
   );
 }
 
 // TODO: Create a function to initialize app
 function init() {
-  
+  inquirer
+    .prompt(questions)
+    .then((userResponses) => {
+      writeToFile("readMe.md", userResponses/*, generateMarkdown({...userResponses})*/);
+  });
 }
 
 // Function call to initialize app

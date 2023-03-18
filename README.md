@@ -1,1 +1,1 @@
-# ReadME-Generator
+{"description":"d","installInstr":"fghjn","useInstr":"tuik v","license":"retgy","contribute":"hgl","tests":"seryt","githubUserName":"vwet","email":"drty"}
