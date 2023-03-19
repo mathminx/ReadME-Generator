@@ -18,8 +18,10 @@
 
   The application will be invoked by using the following command: node index.js
   
+  https://watch.screencastify.com/v/JkuevS2QcYtr7F4xifrm
+  
   ## Credits
-  The Starter code was provided.
+  Starter code was provided.
 
   ## License
     
