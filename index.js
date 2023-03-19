@@ -1,12 +1,15 @@
 // Import packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-
-
-//const generateMarkdown = require ("./utils/generateMarkdown");
+const generateMarkdown = require ("./utils/generateMarkdown");
 
 // Array of questions for user input
 const questions = [
+  {
+    type: "input",
+    message: "What is the title of your project?",
+    name: "title",
+  },
   {
     type: "input",
     message: "Input a short description of your application.",
@@ -15,22 +18,23 @@ const questions = [
   {
     type: "input",
     message: "Provide any installation instructions.",
-    name: "installInstr",
+    name: "installation",
   },
   {
     type: "input",
     message: "Provide instructions for use and examples.",
-    name: "useInstr"
+    name: "usage",
   },
   {
-    type: "input",
+    type: "checkbox",
     message: "Choose a license.",
     name: "license",
+    choices: ["Apache 2.0", "Boost", "Eclipse", "MIT", "Mozilla"],
   },
   {
     type: "input",
     message: "Provide guidelines for other developers who wish to contribute to your application.",
-    name: "contribute",
+    name: "contributing",
   }, 
   {
     type: "input",
@@ -44,25 +48,23 @@ const questions = [
   },
   {
     type: "input",
-    message: "Provide an email address and instructions on how to reach you with additionasl questions.",
+    message: "Provide an email address and instructions on how to reach you with additional questions.",
     name: "email",
   }
 ];
 
-
-// Function to write README file
-function writeToFile(ReadMe, userResponses) {
-  fs.writeFile("readMe.md", JSON.stringify(userResponses), (err)=>
-    err ? console.error(err) : console.log(userResponses)
-  );
+// Function to write the README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, (data), (err) =>
+  err ? console.log(err) : console.log("Creating your README..."));
 }
 
-// TODO: Create a function to initialize app
+// Function to initialize the application
 function init() {
   inquirer
     .prompt(questions)
-    .then((userResponses) => {
-      writeToFile("readMe.md", userResponses/*, generateMarkdown({...userResponses})*/);
+    .then((data) => {
+      writeToFile("README.md", generateMarkdown(data));
   });
 }
 
