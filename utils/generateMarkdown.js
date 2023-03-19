@@ -12,8 +12,10 @@ function renderLicenseBadge(license) {
 // If there is no license, returns an empty string
 function renderLicenseLink(license) {
   if (license == '') {
+    console.log("None");
     return '';
   }
+  console.log(license);
   return `[License](#license)`;
 }
 
@@ -24,6 +26,7 @@ function renderLicenseSection(license) {
     console.log('');
     return '';
   }
+  console.log(license);
   return `## License
     
   This project is licensed under the terms of the ${license} license.
