@@ -1,4 +1,4 @@
-# README Generator       ![License: ](https://img.shields.io/badge/License-MIT-blueviolet.svg)
+# README Generator
 
   ## Description
 
@@ -24,18 +24,6 @@
     
   This project is licensed under the terms of the MIT license.
   
-  
+  ![License: ](https://img.shields.io/badge/License-MIT-blueviolet.svg)
 
-  ## Contributing
-
-  Contributions are always welcome! 
-
-  ## Tests
-
-  Tests to follow.
-
-  ## Questions
-
-  If you have any questions, please contact me via email at mathminx@gmail.com.
-
-  Visit my GitHub page at [mathminx](https://github.com/mathminx/)!
+ 
