@@ -2,7 +2,7 @@
 
   ## Description
 
-  This application is a weather dashboard that runs in the browser and features a dynamically updated HTML and CSS.
+  This application is a weather dashboard that runs in the browser and features a dynamically updated HTML and CSS. 
 
   ## Table of Contents
   * [Installation](#installation)

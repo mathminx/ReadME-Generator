@@ -21,7 +21,6 @@ function renderLicenseLink(license) {
 // If there is no license, returns an empty string
 function renderLicenseSection(license) {
   if (license == '') {
-    console.log('');
     return '';
   }
   return `## License
