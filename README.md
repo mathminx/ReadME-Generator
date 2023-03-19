@@ -19,6 +19,9 @@
   ## Usage
 
   The application will be invoked by using the following command: node index.js
+  
+  ## Credits
+  The style.css and index.html files were provided.
 
   ## License
     
