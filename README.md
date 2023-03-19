@@ -2,7 +2,7 @@
 
   ## Description
 
-  This application creates a README.md file. The app prompts users to answer a series of questions about their project and creates a REAMDE file based on those answers.
+  This application creates a README.md file. The app prompts the user to answer a series of questions about their project and creates a REAMDE file based on those answers.
 
   ## Table of Contents
   * [Installation](#installation)
