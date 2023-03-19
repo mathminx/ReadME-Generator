@@ -15,7 +15,6 @@ function renderLicenseLink(license) {
     console.log("None");
     return '';
   }
-  console.log(license);
   return `[License](#license)`;
 }
 
@@ -25,7 +24,6 @@ function renderLicenseSection(license) {
   if (license == '') {
     return '';
   }
-  console.log(license);
   return `## License
     
   This project is licensed under the terms of the ${license} license.
