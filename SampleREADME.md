@@ -39,3 +39,4 @@
   If you have any questions, please contact me via email at mathminx@gmail.com.
 
   Visit my GitHub page at [mathminx](https://github.com/mathminx/)!
+
