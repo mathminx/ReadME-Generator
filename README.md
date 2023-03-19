@@ -4,7 +4,7 @@
 
   This command-line application quickly and easily creates a professional README file. The app prompts the user to answer a series of questions about their project and dynamically generates a REAMDE file based on those answers. This enables the project creator to devote more time to working on the project. 
   
-  https://watch.screencastify.com/v/JkuevS2QcYtr7F4xifrm
+  [https://watch.screencastify.com/v/JkuevS2QcYtr7F4xifrm](https://drive.google.com/file/d/12eSfkYiRdhpYHM9DiXR-oKXewKOZunRq/view)
 
   ## Table of Contents
   * [Installation](#installation)
