@@ -1,14 +1,14 @@
 // Function that returns a license badge based on which license is passed in
 // If there is no license, returns an empty string
-/*
+
 function renderLicenseBadge(license) {
   if (license == '') {
     return '';
   }
-  return `![License: ](https://img.shields.io/badge/License-${license}-blueviolet.svg)]`
+  return `![License: ](https://img.shields.io/badge/License-${license}-blueviolet.svg)`
 }
 
-// Function that returns the license link
+// Function that returns the license link for the table of contents
 // If there is no license, returns an empty string
 function renderLicenseLink(license) {
   if (license == '') {
@@ -16,7 +16,7 @@ function renderLicenseLink(license) {
     return '';
   }
   console.log(license);
-  return `\n* [License](#license)\n`;
+  return `[License](#license)`;
 }
 
 // Function that creates and returns the license section of the README
@@ -29,17 +29,15 @@ function renderLicenseSection(license) {
   console.log(license);
   return `## License
     
-  Licensed under the ${license} license.
+  This project is licensed under the terms of the ${license} license.
   
   `;
 }
-*/
+
 
 // Function to generate markdown for the README file
 function generateMarkdown(data) {
-  return `# ${data.title}
-
-  ${data.license}
+  return `# ${data.title}       ${renderLicenseBadge(data.license)}
 
   ## Description
 
@@ -48,7 +46,7 @@ function generateMarkdown(data) {
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [License](#license)
+  * ${renderLicenseLink(data.license)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -61,7 +59,7 @@ function generateMarkdown(data) {
 
   ${data.usage}
 
-  ${data.license}
+  ${renderLicenseSection(data.license)}
 
   ## Contributing
 

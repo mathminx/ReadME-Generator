@@ -1,17 +1,16 @@
+# README Generator       ![License: ](https://img.shields.io/badge/License-MIT-blueviolet.svg)
 
-  # README Generator
+  ## Description
 
-    ## Description
-
-  This application creates a README.md file. The app prompts users to answer a series of questions about their project and creates a REAMDE file based on those answers.Install dependencies by running npm install followed by npm i inquirer@8.2.4.
+  This application creates a README.md file. The app prompts users to answer a series of questions about their project and creates a REAMDE file based on those answers.
 
   ## Table of Contents
-  [Installation](#installation)
-  [Usage](#usage)
-  [License](#license)
-  [Contributing](#contributing)
-  [Tests](#tests)
-  [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
   ## Installation
   
@@ -21,15 +20,19 @@
 
   To run the application, type node index.js in the command line.
 
+  ## License
+    
+  This project is licensed under the terms of the MIT license.
+  
   
 
-  ## Contributions
+  ## Contributing
 
   Contributions are always welcome! 
 
   ## Tests
 
-  Tests to follow...
+  Tests to follow.
 
   ## Questions
 
