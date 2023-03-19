@@ -1,9 +1,7 @@
 
   # README Generator
 
-  
-
-  ## Description
+    ## Description
 
   This application creates a README.md file. The app prompts users to answer a series of questions about their project and creates a REAMDE file based on those answers.Install dependencies by running npm install followed by npm i inquirer@8.2.4.
 
