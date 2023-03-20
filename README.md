@@ -14,11 +14,11 @@
 
   ## Installation
   
-  Install dependencies by running npm install followed by npm i inquirer@8.2.4.
+  Install dependencies by running `npm install` followed by `npm i inquirer@8.2.4`.
 
   ## Usage
 
-  The application will be invoked by using the following command: node index.js
+  The application will be invoked by using the following command: `node index.js`
   
   ## Credits
   Starter code was provided.
