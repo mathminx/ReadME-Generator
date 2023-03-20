@@ -18,7 +18,7 @@
 
   ## Usage
 
-  The application will be invoked by using the following command: `node index.js`
+  The application is invoked by running the following command: `node index.js`
   
   ## Credits
   Starter code was provided.
